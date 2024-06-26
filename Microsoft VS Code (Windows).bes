@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+	<Analysis>
+		<Title>Microsoft VS Code (Windows)</Title>
+		<Description><![CDATA[&lt;enter a description of the analysis here&gt; ]]></Description>
+		<Relevance>name of operating system contains "Win"</Relevance>
+		<Relevance>exists file "Code.exe" of folders "AppData\Local\Programs\Microsoft VS Code" of folders of folder "C:\Users" or exists file "C:\Program Files\Microsoft VS Code\Code.exe"</Relevance>
+		<Source>Internal</Source>
+		<SourceReleaseDate>2024-06-26</SourceReleaseDate>
+		<MIMEField>
+			<Name>x-fixlet-modification-time</Name>
+			<Value>Wed, 26 Jun 2024 14:18:12 +0000</Value>
+		</MIMEField>
+		<Domain>BESC</Domain>
+		<Property Name="VS Code Version" ID="1">if (exists file "Code.exe" of folders "AppData\Local\Programs\Microsoft VS Code" of folders of folder "C:\Users") then(version of file "Code.exe" of folders "AppData\Local\Programs\Microsoft VS Code" of folders of folder "C:\Users") else(version of file "C:\Program Files\Microsoft VS Code\Code.exe")</Property>
+		<Property Name="Installed VS Code Extensions" ID="2">names of folders of folders "extensions" of folders of folders of folder  "C:\Users\"</Property>
+	</Analysis>
+</BES>
